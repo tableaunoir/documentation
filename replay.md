@@ -2,7 +2,7 @@
 
 Tableaunoir stores your course but also its evolution. If you want all the states of your blackboard, click on the animation/replay button in the toolbar:
 
-![buttonReplay](img/buttonReplay.gif)
+![buttonReplay](img/buttonReplay.png)
 
 
 ## Navigation in your course
