@@ -6,7 +6,7 @@ In Tableaunoir, you can use scripts to boost your creativity! Please find some e
 
 This example illustrates how to move magnets automatically to have an animation.
 
-![Seesaw](seesaw.gif)
+![Seesaw](img/seesaw.gif)
 
 `A.addEventListener("pointermove", () => {S.magnetMove(B, S.center(B).x, 1000-S.center(A).y); S.magnetMove(A, 300, S.center(A).y); })`
 
@@ -15,7 +15,7 @@ This example illustrates how to move magnets automatically to have an animation.
 
 You may scratch a zone and discover the set of points in the plane that satisfy some conditions. In the example, a convex polygon (in green).
 
-![Scratching](scratching.gif)
+![Scratching](img/scratching.gif)
 
 ``S.mousemove = ({ x, y }) => {
     x = S.round1(7 * (x - 239) / (880 - 239));
