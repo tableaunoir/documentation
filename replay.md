@@ -21,4 +21,13 @@ Each little square at the bottom represents an atomic action (a drawing, erasing
 
 - Change the order of actions. Drag and drop a square in another place to change the order. Soon, we will be able to move several actions.
 
+- Make a keyframe (equivalent of `\pause` in LaTEX beamer): double-click on the square. The square becomes bigger because it is now a keyframe.
 
+
+## For running your animation
+
+Press Page Down and Page Up to see your course/animation.
+
+## Example
+
+![buttonReplay](img/myfirstanimation.gif)
