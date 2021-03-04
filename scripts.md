@@ -30,3 +30,46 @@ You may scratch a zone and discover the set of points in the plane that satisfy 
           S.setColor((a >= 0 && b >= 0 && c >= 0 && x >= 0 && y >= 0) ? "#008822" : "#220000");
      }
 
+     
+     
+    
+## Car game
+
+Make a car game in Tableaunoir in 30sec. Draw a map, draw a car, transform the car in magnet and load the script below!
+
+![cargame](img/cargame.gif)
+
+    let angle = 0;
+    let speed = 0;
+    let c = {x: 200, y: 200};
+    let car = S.getMagnets()[0];
+
+    function control() {
+        if(keys["a"]) angle-=0.05;
+        if(keys["e"]) angle+=0.05;
+        if(keys["z"]) speed += 0.5;
+        speed = Math.min(10.0, speed);
+        car.style.transform = `rotate(${angle}rad)`;
+    };
+
+    S.onupdate = () => {
+        control();
+        speed -= 0.2;
+        speed = Math.max(0.0, speed);
+        const nc = {x: c.x, y: c.y};
+        nc.x += speed * Math.cos(angle);
+        nc.y += speed * Math.sin(angle);
+        nc.x = Math.max(0.0, nc.x);
+        nc.y = Math.max(0.0, nc.y);
+        nc.x = Math.min(2000.0, nc.x);
+        nc.y = Math.min(1000.0, nc.y);
+    
+        if(!S.magnetDrawingUnder(car, nc.x, nc.y))
+            c = nc;
+        S.magnetMove(car, c.x, c.y);
+    }
+
+
+
+
+
