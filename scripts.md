@@ -20,7 +20,7 @@ You may scratch a zone and discover the set of points in the plane that satisfy 
 
 ![Scratching](img/scratching.gif)
 
-      S.mousemove = ({ x, y }) => {
+      S.onmousemove = ({ x, y }) => {
           x = S.round1(7 * (x - 239) / (880 - 239));
           y = S.round1(-7 * (y - 820) / (820 - 239));
           const a = S.round1(5 * x - 2 * y);
@@ -68,8 +68,5 @@ Make a car game in Tableaunoir in 30sec. Draw a map, draw a car, transform the c
             c = nc;
         S.magnetMove(car, c.x, c.y);
     }
-
-
-
 
 
