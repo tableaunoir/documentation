@@ -5,7 +5,7 @@ In Tableaunoir, you can use scripts to boost your creativity! You can write any 
 
 ## Tableaunoir sings!
 
-This example illustrates how to add music when drawing.
+This example illustrates how to add music when drawing. See [https://www.youtube.com/watch?v=IXy4FrHXFCo].
 
     let o = S.newOscillator()
     let b = false;
