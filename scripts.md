@@ -3,6 +3,30 @@
 In Tableaunoir, you can use scripts to boost your creativity! You can write any Javascript code + function from [https://github.com/tableaunoir/tableaunoir/blob/master/src/Script.ts]. But let us discuss some examples.
 
 
+## Tableaunoir sings!
+
+This example illustrates how to add music when drawing.
+
+    let o = S.newOscillator()
+    let b = false;
+
+    S.onupdate = () => {
+        if (ismousedown) {
+            if (!b) {
+                o = S.newOscillator()
+                o.start();
+                b = true;
+            }
+            S.setFrequency(o, musicScoreYToFrequency(point.y));
+        }
+        else {
+            if (b) {
+                o.stop()
+                b = false;
+            }
+        }
+    }
+
 ## Seesaw
 
 This example illustrates how to move magnets automatically to have an animation.
