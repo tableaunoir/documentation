@@ -1,11 +1,11 @@
 # Documentation of Tableaunoir
 
 
-## Philosophy of Tableaunoir (reasons why some features do not exist in Tableaunoir)
+## Philosophy of Tableaunoir: KISS
 
 The main philosophy is KISS (keep it simple, stupid). That is why many usual features are not (and will not be) implemented in Tableaunoir. 
 
-### Line thickness and line style
+### No line thickness or style option
 
 In Tableaunoir, you cannot change the line width (thickness) and the type of stroke. It is because this features are not very useful. Also, just do as if you use a pen on a paper, or a chalk on a real blackboard. 
 
@@ -15,8 +15,14 @@ In Tableaunoir, you cannot change the line width (thickness) and the type of str
 So to keep the user interface simple, it will probably never be implemented. Tableaunoir is *not* a drawing software, but a board to teach/share ideas.
 
 
-### Zoom
-In Tableaunoir, you cannot zoom in/out (except having an overview of your full board). The reason is that it is not very useful to zoom in/out. Probably, you can explain your idea without zoom in/out.
+### No Zoom
+
+Tableaunoir does not allow you to zoom in/out. It has many advantages:
+- you focus on ideas instead of controlling the zoom
+- it is more easy to know where other participants are
+- all participants work at the *same* zoom level so you do not waste time and energy in finding at which zoom levels the other are
+- it is confortable to know that you are *always* in the standard zoom level
+
 
 ### Scrolling
 
