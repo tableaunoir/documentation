@@ -24,6 +24,16 @@ Tableaunoir does not allow you to zoom in/out. It has many advantages:
 - it is confortable to know that you are *always* in the standard zoom level
 
 
+### A unique mode for drawing and selecting
+
+In usual image editor, there is a mode/tool for drawing and a mode for selecting. You may draw some shape, or you may draw some shape for selecting a zone. For an image editor, it is important since you do not to deteriorate your image when selecting! Here is how in work in -- let say -- the image editor Pinta:
+
+![Pinta](img/pinta_draw+select.gif)
+
+Tableaunoir is a tool for teaching. Selection mode and drawing mode are the same. Why? Because when you teach you may draw quickly a circle around some term around an equation. Then you may think "oh I actually want to copy that". We think it is easier just to draw a circle around a term and then to press Ctrl+C, rather than changing for another selection tool and press Ctrl+C. Of course, it is not suitable for fine-grained image editor, but for teaching that is just enough.
+
+![Tableaunoir](img/Tableaunoir_draw+select.gif)
+
 ### Scrolling
 
 In Tableaunoir, you cannot scroll vertically and only horizontally. Some users may expect to have an infinite canvas in all directions. We think it is not a good idea because your board may lack of structure. Scrolling horizontally is just perfect because it allows you to have several panels in your board.
