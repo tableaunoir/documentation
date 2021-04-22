@@ -32,7 +32,7 @@ In usual image editor, there is a mode/tool for drawing and a mode for selecting
 
 Tableaunoir is a tool for teaching. Selection mode and drawing mode are the same. Why? Because when you teach you may draw quickly a circle around some term around an equation. Then you may think "oh I actually want to copy that". We think it is easier just to draw a circle around a term and then to press Ctrl+C, rather than changing for another selection tool and press Ctrl+C. Of course, it is not suitable for fine-grained image editor, but for teaching that is just enough.
 
-![Tableaunoir](img/Tableaunoir_draw+select.gif)
+![Tableaunoir](img/tableaunoir_draw+select.gif)
 
 ### Scrolling
 
