@@ -1,8 +1,18 @@
-# Replay
+# Replay of course / presentation
+
+## Example of an animated proof
+
+With Tableaunoir, you can create animated course / presentation.
+![proofsqrt2irrational](img/proofsqrt2irrational.gif)
+
+
+## Animation mode!
 
 Tableaunoir stores your course but also its evolution. If you want all the states of your blackboard, click on the animation/replay button in the toolbar:
 
 ![buttonReplay](img/buttonReplay.png)
+
+
 
 
 ## Navigation in your course
