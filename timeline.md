@@ -1,4 +1,4 @@
-# Replay of course / presentation
+# Make a presentation / animation
 
 ## Example of an animated proof
 
@@ -8,7 +8,7 @@ With Tableaunoir, you can create animated course / presentation.
 
 ## Animation mode!
 
-Tableaunoir stores your course but also its evolution. If you want all the states of your blackboard, click on the animation/replay button in the toolbar:
+Tableaunoir stores your course but also its evolution in the timeline. If you want all the states of your blackboard, click on the animation/replay button in the toolbar:
 
 ![buttonReplay](img/buttonReplay.png)
 
