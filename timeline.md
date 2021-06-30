@@ -37,7 +37,3 @@ Each little square at the bottom represents an atomic action (a drawing, erasing
 ## For running your animation
 
 Press Page Down and Page Up to see your course/animation.
-
-## Example
-
-![buttonReplay](img/myfirstanimation.gif)
