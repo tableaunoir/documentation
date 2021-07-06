@@ -2,9 +2,11 @@
 
 ## Example of an animated proof
 
-With Tableaunoir, you can create animated course / presentation.
+With Tableaunoir, you can create animated course / presentation. You can then produce animated GIFs or videos:
+
 ![proofsqrt2irrational](img/proofsqrt2irrational.gif)
 
+See the video: [https://www.youtube.com/watch?v=SsBujkaOnr4]
 
 ## Animation mode!
 
@@ -20,7 +22,7 @@ Tableaunoir stores your course but also its evolution in the timeline. If you wa
 ![buttonReplay](img/screenshotAnimationMode.png)
 
 
-Each little square at the bottom represents an atomic action (a drawing, erasing something, etc.). When you click on, you will reach the state of the board after that action. The first square on the left is the initial state of the board.
+Each little square at the bottom represents an atomic action (a drawing, erasing something, adding a magnet, deleting a magnet, moving a magnet, etc.). When you click on, you will reach the state of the board after that action. The first square on the left is the initial state of the board.
 
 Small blue buttons ... and - enables to hide/show the squares on the timeline (otherwise the timeline would be very long).
 
