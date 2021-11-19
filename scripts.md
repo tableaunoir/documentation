@@ -99,6 +99,154 @@ S.onupdate = () => {
 }
 ```
 
+
+
+## A* algorithm
+
+![Astar](img/Astar.gif)
+
+```javascript
+const dist = (a, b) => Math.sqrt((a.x - b.x) ** 2 + (a.y - b.y) ** 2);
+
+const factor = 0;
+
+
+class Astar {
+    G; start; target; d; visited; treated; queue; pred; h;
+    constructor(G, start, target) {
+        this.G = G;
+        this.start = start;
+        this.target = target;
+        this.queue = new MinHeap();
+        this.queue.insert(start, 0);
+
+        this.d = {};
+        this.pred = {};
+        this.visited = {};
+        this.treated = {};
+        this.visited[start.x + "_" + start.y] = start;
+        this.d[start.x + "_" + start.y] = 0;
+        this.h = (node) => factor * dist(node, target);
+    }
+
+    drawPathEndingIn(node) {
+        if (node) {
+            S.setPixel(node, "rgba(255, 255, 0, 1)");
+            this.drawPathEndingIn(this.pred[node.x + "_" + node.y])
+        }
+    }
+
+
+    update() {
+        if (this.queue.isEmpty())
+            return;
+
+        const node = this.queue.remove();
+        if (node != undefined) {
+            this.treated[node.x + "_" + node.y] = node;
+            this.visited[node.x + "_" + node.y] = node;
+            if (node.x == this.target.x && node.y == this.target.y) {
+                this.queue = new MinHeap();
+                this.drawPathEndingIn(this.target);
+                console.log("win")
+                return;
+            }
+            S.setPixel(node, "rgba(0, 0, 255, 1)");
+
+            for (const { node: n, weight: w } of this.G.getEdgesToNeighbors(node)) {
+                if (this.d[n.x + "_" + n.y] == undefined || (this.d[n.x + "_" + n.y] > this.d[node.x + "_" + node.y] + w)) {
+                    this.d[n.x + "_" + n.y] = this.d[node.x + "_" + node.y] + w;
+                    S.setPixel(n, "rgba(255, 0, 0, 1)");
+                    this.visited[n.x + "_" + n.y] = n;
+                    this.pred[n.x + "_" + n.y] = node;
+                    this.queue.insert(n, this.d[n.x + "_" + n.y] + this.h(n));
+                }
+            }
+        }
+        return node;
+    }
+
+    clean() {
+        for (let key in this.visited)
+            S.clearPixel(this.visited[key]);
+    }
+}
+
+
+
+
+
+
+
+
+class BidirectionalAstar {
+    algoST; algoTS;
+    finished;
+
+    constructor(G, start, target) {
+        this.algoST = new Astar(G, start, target);
+        this.algoTS = new Astar(G, target, start);
+        this.finished = false;
+    }
+
+    update() {
+        if (this.finished)
+            return;
+
+        function appearsIn(node, D) {
+            if (D[node.x + "_" + node.y])
+                return true;
+            return false;
+        }
+
+        const x = this.algoST.update();
+        const y = this.algoTS.update();
+
+        if (x == undefined) {
+            this.finished = true;
+            return;
+        }
+        if (y == undefined) {
+            this.finished = true;
+            return;
+        }
+        
+        if (appearsIn(x, this.algoTS.treated) || appearsIn(y, this.algoST.treated)) {
+            console.log("win");
+            this.finished = true;
+        }
+    }
+
+    clean() {
+        this.algoST.clean();
+        this.algoTS.clean();
+    }
+
+}
+
+const G = new PixelGraph();
+let algo;
+
+S.nbUpdatePerCycle = 100;
+
+reset();
+
+function reset() {
+    if (algo != undefined)
+        algo.clean();
+
+    const start = S.magnetMiddleBottom(S.getMagnets()[0]);
+    const target = S.magnetMiddleBottom(S.getMagnets()[1]);
+    algo = new Astar(G, start, target);
+    //algo = new BidirectionalAstar(G, start, target);
+}
+
+S.onupdate = () => algo.update();
+S.onmagnetmove = reset;
+```
+
+
+
 ## More scripts?
 
 You can open a pull-request and suggest one of your script!
