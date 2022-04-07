@@ -5,7 +5,6 @@ With Tableaunoir, you can create animated course / presentation. You can then:
 - make animated GIFs (together with the software Peek for instance)
 - make videos (together with the software OBS)
 
-The presentation / animation mode is still in development. In case the timeline is not correctly displayed press "a" twice (once for hiding the timeline, and once for showing the timeline again).
 
 ## Example of an animated proof
 
@@ -24,23 +23,22 @@ Tableaunoir stores your course but also its evolution in the timeline. If you wa
 
 
 
+
 ## Navigation in your course
 
-![buttonReplay](img/screenshotAnimationMode.png)
+The timeline is displayed a the bottom of the screen. The progress bar is similar to the one of a Youtube video: the past is represented in red; while the future is in grey.
 
+![screenshot_animation](https://user-images.githubusercontent.com/43071857/162198738-dc62f403-77c2-4fb0-a9d7-927ae1f6c58d.png)
 
-Each little square at the bottom represents an atomic action (a drawing, erasing something, adding a magnet, deleting a magnet, moving a magnet, etc.). When you click on, you will reach the state of the board after that action. The first square on the left is the initial state of the board.
-
-Small blue buttons ... and - enables to hide/show the squares on the timeline (otherwise the timeline would be very long).
-
+There are three buttons. The left and right arrows are for navigating in the presentation (last and next slides). The third button (hearts) proposes a menu to add new slides and to merge slides. Below the progress bar, each little square represents an atomic action. An atomic action can be: a drawing, erasing something, erasing the full board, adding a magnet, deleting a magnet, moving a magnet, etc. When you click on, you will reach the state of the board after that action. The first empty square (on the left) is the beginning of the slide.
 
 ## Editing
 
 - Inserting new actions. Click on a square to reach the interested state you want to start with. Then just perform the action as usual (drawing, erasing).
-- Delete an action. Drag and drop a square on the top to remove that action from the list. /!\ It can not be canceled!
-- Change the order of actions. Drag and drop a square in another place to change the order. Soon, we will be able to move several actions.
-- Make a keyframe (equivalent of `\pause` in LaTEX beamer): double-click on the square. The square becomes a keyframe. By double-clicking again, the square stops being a keyframe.
-- you can select multiple actions with the help of Ctrl and Maj, to move several actions or delete several actions.
+- Delete an action. Drag and drop a square on the top to remove that action from the list.
+- Change the order of actions. Drag and drop a square in another place to change the order.
+- To perform deletion/change the order of actions and slides, use Ctrl for selecting several actions and/or slides, and Shift for consecutive selections.
+- Make a keyframe (equivalent of `\pause` in LaTEX beamer), go in the heart menu and select `new slide from here`.
 - for adding a new slide clicking by clearing all the board, go in the tool menu (pressing "t") and choose "Clear the board" (the icon is an eraser with a cape).
 
 
