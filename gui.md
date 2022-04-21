@@ -41,3 +41,25 @@ From top to top (clockwise):
 - draw ellipses from **center**
 - **compass**, in order to draw arcs
 - **clear** the board (it also creates a new clear slide)
+
+
+## Animation progress bar
+
+![image](https://user-images.githubusercontent.com/43071857/164521714-246accc2-eeee-4460-8ed2-733535233f69.png)
+
+From left to right:
+- Go to the **previous slide** in your presentation
+- Go to the **next slide** in your presentation
+- Open the **menu** for **adding/merging slides**
+
+Then each small square represents an action. The first clear square is the beginning of the slide. Each following square are the actions executed in the current slide. In the picture, they are drawing actions.
+
+
+### Menu for adding merging slides
+
+![image](https://user-images.githubusercontent.com/43071857/164522229-7c0f00a0-2129-473a-bde0-1103d3f2586b.png)
+
+From top to bottom:
+- **Merge** the slide with the next one. The actions current slide will at the beginning of the new merged slide.
+- **Create** a new slide from now.
+- **Create** a new clear slide from now. The new slide will start with an action that clears the board.
