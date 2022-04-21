@@ -34,10 +34,10 @@ Nothing special to say: choose your color!
 
 From top to top (clockwise):
 - the first button is cut around the last contour that was drawn. The icon of the button is a magnet because moveable objects on the board in Tableaunoir are **magnets**
-- draw freely (the default mode of Tableaunoir)
-- draw lines
-- draw rectangles
-- draw ellipses
-- draw ellipses from center
-- compass, in order to draw arcs
-- clear the board (it also creates a new clear slide)
+- draw **freely** (the default mode of Tableaunoir)
+- draw **lines**
+- draw **rectangles**
+- draw **ellipses**
+- draw ellipses from **center**
+- **compass**, in order to draw arcs
+- **clear** the board (it also creates a new clear slide)
