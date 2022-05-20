@@ -18,6 +18,7 @@ Description of the [graphical user interface](gui.md)
 - [How to use magnets](magnets.md) Magnets are images that you can move to make your course/presentation more concrete/pleasant/interactive.
 - [How to make presentations/animations](timeline.md) In Tableaunoir, you can build presentations/animations that you can replay.
 - [How to write scripts to custom Tableaunoir](scripts.md) Scripts can help you to add sounds, build small games, etc.
+- [How to export my board in PNG or PDF](export.md) 
 
 
 
