@@ -16,13 +16,14 @@ Tableaunoir exports your board as a PDF document. There are two behaviors depend
 
 ### Classical board
 
-Tableaunoir splits your board in "screen" or "window". Each window is a page in your PDF. 
+Each "screen" (i.e. "window") of your board is a page in your PDF. 
 
-#### Example 1
+![image](https://user-images.githubusercontent.com/43071857/171044677-394bf1f8-a5e8-4a4c-8553-31ed37adde85.png)
+
+
+As shown in the illustration, if you have drawn on three screens, then the PDF is made up of three pages. The first page contains the first (leftmost) window; the second page contains the second window; the third page contains the third (rightmost) window.
 If you have drawn on a single window only, then the PDF is made up of a single page containing all the board.
 
-#### Example 2
-If you have drawn on two windows, then the PDF is made up of two pages. The first page contains the leftmost window; the second page contains the rightmost window.
 
 ### Presentation
 
