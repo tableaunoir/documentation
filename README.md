@@ -3,6 +3,12 @@
 Welcome to the documentation of Tableaunoir. Tableaunoir is an online blackboard. Its power is in the magnets that enable to make interactive presentations.
 
 
+
+<img src="https://user-images.githubusercontent.com/43071857/192144828-0f8f6c2d-0665-4c6b-abcb-eee4396ff085.png" alt="" height="300" />
+
+<img src="https://github.com/tableaunoir/tableaunoir/blob/master/imgREADME/coursparcourslargeur.gif" alt="" height="300" />
+
+
 ## Philosophy of Tableaunoir
 
 Tableaunoir follows the KISS (keep it simple stupid) principle. Click here to know more about the [philosophy of Tableaunoir](philosophy.md).
