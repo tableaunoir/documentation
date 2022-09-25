@@ -14,7 +14,7 @@ So to keep the user interface simple, it will probably never be implemented. Tab
 
 ## No Zoom
 
-Tableaunoir does not allow you to zoom in/out. It has many advantages:
+No Zoom? No, Tableaunoir does not allow you to zoom in/out. Being not able to Zoom has many advantages:
 - you focus on ideas instead of controlling the zoom
 - it is more easy to know where other participants are
 - all participants work at the *same* zoom level so you do not waste time and energy in finding at which zoom levels the other are
@@ -37,16 +37,16 @@ In Tableaunoir, you cannot scroll vertically and only horizontally. Some users m
 
 ## Several fonts
 
-You can change the font of texts etc. The user interface will remain simple to use.
+You cannot change the font of texts etc. The user interface will remain simple to use.
 
 ## Magnet resizing
 
-You cannot resize magnets (pictures) with the mouse. The reason is because we think magnets should be very easy to be moved. Displaying handles so that objects can be resized etc. will take space on the screen, will annoy the user when magnets are moved etc.
+You cannot resize magnets (pictures) with the mouse. The reason is because we think magnets should be very easy to be moved. Displaying handles so that objects can be resized etc. will take space on the screen, will annoy the user when magnets are moved etc. However, you can resize the magnet by Ctrl+ + or Ctrl + -.
 
 
 ## Advanced features
 
-Although it follows KISS, there are some advanced features. Do not hesitate the documentation!
+Although it follows KISS, there are some *advanced* features that are very useful for teaching. Do not hesitate to read the documentation!
 
 
 
