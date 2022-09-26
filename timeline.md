@@ -42,12 +42,20 @@ In order to record from a give point in time, click on the timeline progress bar
 
 ## How to add new slides?
 
-For adding new slides, you click on the heart menu. From there, you can either create an **empty slide**. You can also create a new slide that automatically contains what was already drawn  (equivalent of `\pause` in LaTEX beamer). Another way, is to clear the board: go in the tool menu (pressing "t") and choose "Clear the board" (the icon is an eraser with a cape). Erasing the board corresponds to creating an empty slide.
+For adding new slides, you click on the heart menu. From there, you can either create an **empty slide**. You can also create a new slide that automatically contains what was already drawn  (equivalent of `\pause` in LaTEX beamer).
+
+![image](https://user-images.githubusercontent.com/43071857/164522229-7c0f00a0-2129-473a-bde0-1103d3f2586b.png)
+
+
+Another way, is to clear the board: go in the tool menu (pressing "t") and choose "Clear the board" (the icon is an eraser with a cape). Erasing the board corresponds to creating an empty slide.
+
+![image](https://user-images.githubusercontent.com/43071857/164414542-9b828977-b245-4c5a-878b-366564a0c105.png)
 
 ## For running your animation
 
-Press Page Down and Page Up to see your course/animation. You can also click directly in the progress bar.
+Press Page Down and Page Up to see your course/animation. You can also click directly in the progress bar on the two-arrow buttons:
 
+![image](https://user-images.githubusercontent.com/43071857/164521714-246accc2-eeee-4460-8ed2-733535233f69.png)
 
 ## How to edit the timeline?
 
