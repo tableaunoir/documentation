@@ -30,5 +30,13 @@ You can draw on top of a magnet. To do so, the idea is to move the magnet in the
 ![tableaunoir_magnetbehind](https://user-images.githubusercontent.com/43071857/192146493-518884dc-98d2-486d-8813-707f7684681b.gif)
 
 
+## Draw a diagram/graph
+
+You can connect two magnets by drawing a line/curve between. To do that, press Shift to indicate that you want to connect the two magnets (otherwise, you simply draw a normal curve). If you then move the magnets, that curve will follow them.
+
+![househospital](https://user-images.githubusercontent.com/43071857/192337551-101970ff-4f40-407a-95c5-e9cbdc506cbd.gif)
+
+
+
 
 
