@@ -36,9 +36,12 @@ This example illustrates how to move magnets automatically to have an animation.
 ![Seesaw](img/seesaw.gif)
 
 ```javascript
+const A = S.getMagnets()[0]
+const B = S.getMagnets()[1]
+
 A.addEventListener("pointermove", 
-     () => {S.magnetMove(B, S.center(B).x, 1000-S.center(A).y);
-            S.magnetMove(A, 300, S.center(A).y); })
+     () => {S.magnetMove(B, S.magnetCenter(B).x, 1000-S.magnetCenter(A).y);
+            S.magnetMove(A, 300, S.magnetCenter(A).y); })
 ```
 
 ## Scratching
