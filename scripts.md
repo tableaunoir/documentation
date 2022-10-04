@@ -8,10 +8,7 @@ In Tableaunoir, you can use scripts to boost your creativity! You can write any 
 The following script enables to toggle magnets' background color as follows: a click on a magnet makes its background orange. A second click makes the background normal again.
 
 ```javascript
-S.onmagnetmousedown = (evt) => {
-console.log(evt.target.style.backgroundColor)
-   evt.target.style.backgroundColor = evt.target.style.backgroundColor == "orange" ? "" : "orange";
-} 
+S.onmagnetmousedown = (evt) => evt.target.style.backgroundColor = evt.target.style.backgroundColor == "orange" ? "" : "orange";
 ```
 
 
