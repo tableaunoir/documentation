@@ -3,6 +3,18 @@
 In Tableaunoir, you can use scripts to boost your creativity! You can write any Javascript code + function from [https://github.com/tableaunoir/tableaunoir/blob/master/src/Script.ts]. But let us discuss some examples.
 
 
+## Toggle magnets' background color
+
+The following script enables to toggle magnets' background color as follows: a click on a magnet makes its background orange. A second click makes the background normal again.
+
+```javascript
+S.onmagnetmousedown = (evt) => {
+console.log(evt.target.style.backgroundColor)
+   evt.target.style.backgroundColor = evt.target.style.backgroundColor == "orange" ? "" : "orange";
+} 
+```
+
+
 ## Tableaunoir sings!
 
 This example illustrates how to add music when drawing. See [https://www.youtube.com/watch?v=IXy4FrHXFCo].
