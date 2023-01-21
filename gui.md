@@ -39,7 +39,7 @@ From top to top (clockwise):
 - draw **rectangles**
 - draw **ellipses**
 - draw ellipses from **center**
-- **compass**, in order to draw arcs
+- **compass**, in order to draw arcs. [How to use the compass?](compass.md)
 - **clear** the board (it also creates a new clear slide)
 
 
